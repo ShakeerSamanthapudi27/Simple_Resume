@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        html {
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .my {
+            margin-top: 1%;
+            margin-left: 70%;
+        }
+
+        a[class="element1"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element1"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element1"]:hover::after {
+            transform: scale(1);
+
+        }
+
+        h2[class="element1"] {
+            visibility: hidden;
+        }
+
+        h2[class="element1"]:hover::after {
+            visibility: visible;
+        }
+
+        a[class="element1"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element1"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element1"]:hover::after {
+            transform: scale(1);
+        }
+
+        a[class="element2"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element2"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element2"]:hover::after {
+            transform: scale(1);
+        }
+
+        a[class="element3"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element3"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element3"]:hover::after {
+            transform: scale(1);
+        }
+
+        a[class="element4"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element4"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element4"]:hover::after {
+            transform: scale(1);
+        }
+
+        a[class="element5"] {
+            position: relative;
+            overflow: hidden;
+            padding: 10px;
+            color: #fff;
+        }
+
+        a[class="element5"]::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 50%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a[class="element5"]:hover::after {
+            transform: scale(1);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap');
+
+        h1 {
+    
+            background-color:black;
+            border-radius: 0 20px;
+            padding: 10px 20px;
+        }
+
+        #slider__container {
+            position: absolute;
+            /* background-color: #2284b1; */
+            width: 100%;
+            height: 80%;
+
+        }
+
+        #article__container {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            /* background-color: #22b186; */
+            top: 10%;
+            left: 10%;
+            border-radius: 6px;
+            background: black;
+            box-shadow: 6px 6px 12px #c4c5c7,
+                -6px -6px 12px blueviolet;
+
+        }
+
+        .container__text {
+            left: 15%;
+            top: 25%;
+            width: 30%;
+            height: auto;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .swiper-slide--style {
+            overflow: hidden;
+
+        }
+
+        /* #slide__img1, #slide__img2, #slide__img3{
+	
+} */
+        .slide__img--img {
+            
+            width: 60%;
+            height: 90%;
+            background-color:black;
+            left: 40%;
+            top: 10%;
+            bottom: -100;
+            overflow: hidden;
+            clip-path:ellipse(100%);
+
+        }
+
+
+        @media all and (max-width:1000px) {
+            .slide__img--img {
+                clip-path: none;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -2;
+            }
+
+            #slide__img3,
+            #slide__img2,
+            #slide__img1 {
+                background-size: cover;
+            }
+
+            .container__text {
+                z-index: 0;
+                
+                display: block;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                color: rgb(255, 255, 255);
+                flex-wrap: wrap;
+                letter-spacing: 2px;
+                font-weight: thin;
+            }
+
+            .container__text p,
+            .container__text h2 {
+                font-size: smaller;
+                position: absolute;
+                width: 70%;
+                left: 15%;
+                text-align: center;
+
+            }
+
+            .container__text p {
+                top: 50%;
+
+            }
+
+            .container__text h2 {
+                top: 40%;
+                /* font-size: larger; */
+
+            }
+        }
+        .blinking-box {
+      border: 2px solid #808080;
+      padding: 0px;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    }
+    p
+    {
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="first" style="margin-left: 22%; margin-top: 6%;">
+        <a
+            style="font-size:x-large; color: white; font-weight: bold; flex-wrap: wrap; border-left-color: greenyellow; border-left: 5px solid greenyellow; padding-left: 1%;">Shakeer
+            <span style="font-size:x-large; color: greenyellow; font-weight: bold;flex-wrap: wrap;"> Samanthapudi</span>
+        </a>
+    </div>
+    <h3 style="margin-left: 40%;"> BTech CSE - 
+        <span style="color: greenyellow;">SRM AP University
+    </span>
+    </h3>
+    <div id="about">
+        <div class="tooltip-container">
+            <span>
+                <div style="margin-left: 10%;">
+                    <li style="display:inline-block;">
+                        <a href="./Resume Main.html" class="element1" style="text-decoration:none; color:greenyellow; margin-left: 150px ; ">
+                            <h1 style="font-size: x-large" ;>Home</h1>
+                        </a>
+                        <p></p>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a class="element2" href="./languages.html"
+                            style="text-decoration:none; color: greenyellow; margin-left: 200px;">
+                            <h1 style="font-size: x-large;">Skills</h1>
+                        </a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a class="element3" href="./edu.html"
+                            style="text-decoration:none; color:greenyellow; margin-left: 200px;">
+                            <h1 style="font-size: x-large;">Education</h1>
+                        </a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a class="element4" href="./certi.html"
+                            style="text-decoration:none; color:greenyellow; margin-left: 300px;">
+                            <h1 style="font-size: x-large;">Certificates</h1>
+                        </a>
+                    </li>
+                   
+
+            </span>
+        </div>
+        <div>
+            <h2 style="margin-left: 10%; color: greenyellow;">SSC :</h2>
+            <p style="margin-left: 14%;">SRI CHAITANYA TECHNO SCHOOL , VIJAYAWADA</p>
+            <p style="margin-left: 14%;">AGGREGATE :: 100%</p>
+            <p style="margin-left: 14%;">2019 - 2020</p>
+            <p style="margin-left: 14%;">STATE BOARD OF AP</p>
+            <br>
+            <h2 style="margin-left: 10%; color: greenyellow;">PRE - UNIVERSITY :</h2>
+            <p style="margin-left: 14%;">SRI VISWASANTHI EDUCATIONAL INSTITUTE</p>
+            <p style="margin-left: 14%;">AGGREGATE :: 95%</p>
+            <p style="margin-left: 14%;">2020 - 2022</p>
+            <p style="margin-left: 14%;">STATE BOARD OF AP</p>
+            <br>
+            <h2 style="margin-left: 10%; color: greenyellow;">UNDER GRADUATION</h2>
+            <p style="margin-left: 14%;">SRM UNIVERSITY AP</p>
+            <p style="margin-left: 14%;">CGPA :: 9.2</p>
+            <p style="margin-left: 14%;">2022 - 2026</p>
+            <p style="margin-left: 14%;">SRM UNIVERSITY AP</p>
+            <br>
+        </div>
+        <br>
+        <br style="color: white;">
+        <br>
+        <br>
+        <h2 style="color:greenyellow; margin-left: 10%;">Consociate with me On</h2>
+        <span>
+            
+            <div>
+            <a href=" https://www.linkedin.com/in/shakeer-samanthapudi-715006255/">
+                <img style="height: 30px; width: 30px; margin-left: 20%;" alt=""
+                    src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEUAd7X///8Ac7NGlMRGk8QAdrUAbLAAbrDZ7PXV6fPy+fw9ir/p9Pkugbo0hr3D2umz0ORUnMh3q9C72eplocoIe7dsps6dxN6lyeCDs9TL4u+WwNzg7vVTmMYhg7uy1OcLxWtDAAABaklEQVRIie3W7Y6CMBAFUBxohwIK8qEIgu//lltou7TortNu9p83MRGSIzgzlEaHwETyU51jr5wrBWsODDzCgNcLrHjkHV5JOIE/hEnCOATGEiYhMHGgLBELgdi1lxlJ1IH8uvS17CjShtiriRCekM1mlm7oBaE2sCEMhA1vBg5+kCUG9n63GmGqXJYTqmNDlhcrrAkXdPsIx3FI+4TidpPDkHNOm7ndrP6U9TH/5VZxDewPsEvaS5t0CK8h9qXKSd4tq9T3EaC73rOl2EVp/X0bcqcddzMMU7YtbFuHHShsqH+lnJwlsUIqFIW7mLZAhPuYOfaGh5nR4fBotgLVQIWik+PE+11h38NCLUGmV+Ypfw9HdQU0j/lAhfr9AKafggizXHc81/VJibA4qvKzk4HE4nzgB/4jfLU8UiA26RqxQn0wfEOhTjTPMEIdZh9EOsw9QXzpPOdvMHgTGLztDN7oBm+twzfzYfkCChobmnKthiYAAAAASUVORK5CYII=>
+            </a>
+            <a href= https://www.instagram.com/sriram_the_1/>
+                <img style="height: 30px; width: 30px; margin-left: 5%;" alt=""
+                    src="data:image/png;base64,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>
+            </a>
+            <a href= https://api.whatsapp.com/send/?phone=8688814287>
+                <img style="height: 30px; width: 30px; margin-left: 5%;" alt=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAmVBMVEVHcEwg32Al1WUl02cl1GYl02Ul02Ym02Yl0mUg12Ao12Al1Gcm02Yl02Yl1GUl1GUl02Yk02Ygz2goz2gl1Gcl1GYk1GYl1WUl02cgz3Am1WYl1GYm02Ygz2Ak02Ql0mYk0WYj0mYl02Uo02Ql0mYn0WYn1GYm0mYm0mUq1Wom0WYj02Um0mYl02Yl0mYlz2Un0WQq1WUj02cilIlXAAAAM3RSTlMAEGCQz+//r2AgIJ9/78+/0IAgIN/fcDDQEH+PgBBAoIBQv0DvcHBQsDCAkKDPjzBwMJAU6DEhAAABZElEQVR4AWTTBbajUBBF0YsdiBAixN1d5z+4/vBYb0Gzo8DFqgrJclzPDyDww6ihuqYXYNGqRdr55rgThklMPdLsAnGvr9wgSoFhKdEcQjxSSRaJx+Xtk74qBmEp0YXJVP/rwdBRZgbpVHUhzPMTBMT97HcRqWKZwkrSGjbFhaxUsYWdpCGpTA5PVQk42kNLfw5A7KjiCCctiiOTOatiAC1dwNGfIZD2VXVgqA5DZRbAVarqEGtYBJYHuKl+lTagCBjXA/lRjLvtYMMGiPUAR8YT4kjSi3Cv3IGdjuDKWD6BTjQD2DmSxuBlXztb/TuWY6p7NvUsD4qRynbhWNS6PG6mZDNoFQVwVPL+LPLiN4ucDviqMf3P5tS2s76d0PTUNNFRxX5oBzEBZ//ZBeUnpbnGDvoS4oDc7rN3JOf72QH8pnbwcjEVqZ3PNdDxtlNFCVYSyUo8dypjul20kqT1byABBAAASawYPAmTfuIAAAAASUVORK5CYII="
+            </a>
+            <a href= "tel:+91 8688814287">
+                <img style="height: 30px; width: 30px; margin-left: 5%;" alt=""
+                src="./mobileicon.jpeg"
+            </a>
+            </div>
+        </span>
+</body>
+
+</html>
